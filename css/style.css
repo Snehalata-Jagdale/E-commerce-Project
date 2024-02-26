@@ -1,0 +1,316 @@
+/*Style for overall Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Style for header */
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: bold;
+  font-family: Sofia;
+}
+
+/* CSS styles for the input and button */
+.input-btn {
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-right: 0px;
+}
+
+.search-btn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  margin-left: 1px;
+  height: 38px;
+  width: 50px;
+  font-size: 16px;
+}
+
+.search-btn:hover{
+  color:white;
+}
+     
+.container-fluid{
+  font-size: 18px;
+}
+.container-fluid:hover{
+  color: black;
+  font-size: 22px;
+}
+
+/* Style main page */
+
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGhhbmdpbmclMjBjbG90aGVzfGVufDB8fDB8fHww');
+  width: 100%; 
+  height: 80vh; 
+  object-fit: cover;
+  overflow-x: hidden;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(black);
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGhhbmdpbmclMjBjbG90aGVzfGVufDB8fDB8fHww');
+  background-size: cover;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white; 
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #119aef;
+}
+
+.content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: bold;
+  font-family: Sofia;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+}
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for screens smaller than 768px wide */
+  .hero-section {
+      padding: 60px 10px; /* Adjust the padding for small screens */
+  }
+
+  .hero-section h1 {
+      font-size: 2em;
+  }
+
+  .hero-section p {
+      font-size: 1em;
+  }
+}
+
+/* Style footer */
+
+.footer {
+ 
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(36, 33, 33);
+  color: white;
+  margin-top:05%;
+}
+
+.sub-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+  border-bottom : 1px solid white;
+  padding: 20px 0 50px 0;
+  margin: 0 50px 20px 50px;
+  
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.heading {
+  font-size: 20px;
+  padding:30px;
+  font-weight: 600;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: double;
+  padding-bottom: 10px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex: none;
+    width: 100%; /* Make items take full width on small screens */
+  }
+}
+
+/* Style Contact page */
+.form-label {
+  font-weight: bold;
+}
+
+.borders {
+  border: 1px solid black;
+}
+
+/*login page */
+
+.logins {
+  margin-bottom: 50px;
+}
+
+
+/* product feature styles */
+
+.card-wrapper {
+  display: flex;
+}
+.product-card {
+  margin: 0.5rem;
+  width: calc(100%/4);
+  
+}
+
+@media(max-width:576px){
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body{
+  text-align: center;
+}
+
+}
+
+
+
+.mediumCorousel{
+  display: none;
+}
+
+.smallCorousel {
+  display: none;
+}
+
+
+.image-wapper {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wapper img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Product page css */
+.pro-card {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+/* css for medium screens */
+@media (min-width: 900px) {
+  .search-field {
+      width: 50%;
+  }
+}
+
+
+@media (max-width:900px) {
+  .search-field {
+      width: 75%;
+  }
+}
+
+@media screen and ((max-width: 1000px) and (min-width: 500px)) {
+  .product-card {
+      margin: 0.5rem;
+      width: calc(100%/2);
+      
+  }
+
+  .mediumCorousel {
+      display: block;
+  }
+  .smallCorousel {
+      display: none;
+  }
+}
+
+/* CSS for Small device */
+
+@media screen and (max-width: 500px) {
+  .product-card {
+      margin: 0.5rem;
+      width: calc(100%);
+      
+  }
+
+  .smallCorousel {
+      display: block;
+  }
+
+  .image-wapper {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .image-wapper img {
+      width: 100%;
+      height: 300px;
+  }
+}
+
+@media (max-width: 599px) {
+  .search-field {
+      width: 75%;
+  }
+
+  .hero-section {
+      width: 100%;
+      height: 40vh;
+  }
+
+  .sub-footer {
+      flex-direction: column;
+  }
+}
